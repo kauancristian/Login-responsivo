@@ -27,10 +27,9 @@ main{
     height: 100vh;
 }
 
-section#login{
+#login{
     position: absolute;
     background-color: white;
-    text-align: center;
     width: 80vw;
     height: 600px;
     border-radius: 20px;
@@ -64,10 +63,13 @@ section#login{
             font-size: 1.8em;
             font-weight: bolder;
             padding-bottom: 15px;
+            text-align: center;
         }
 
 
-        #cadastro aside{
+        section#login > #cadastro > aside{
             text-align: justify;
+            font-size: 0.8em;
         }
+        
 

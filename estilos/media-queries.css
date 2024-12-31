@@ -28,6 +28,7 @@ que são telas pequenas e celulares
     }
 }
 
+
 /* Desktops e grandes telas*/
 @media screen and (min-width:992px) {
     section#login{
@@ -44,6 +45,15 @@ que são telas pequenas e celulares
     section#login > div#cadastro{
         float: left;
         width: 50%;
+    }
+
+    #cadastro > aside{
+        text-align: justify;
+        font-size: 1.2em;
+    }
+
+    #cadastro h1{
+        font-size: 2em;
     }
 
     body{

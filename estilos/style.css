@@ -27,6 +27,7 @@ main{
     height: 100vh;
 }
 
+/* Login como um todo */
 #login{
     position: absolute;
     background-color: white;
@@ -44,6 +45,7 @@ main{
     transition-timing-function: ease;
 }
 
+    /* Imagem no login */
     #login > div#imagem{
         background: var(--bg-mb) url(../imgs/metal.jpg)no-repeat;
         background-position: center center;
@@ -53,7 +55,7 @@ main{
     }
 
   
-
+    /* Onde conterá o formulário */
     #cadastro{
         display: block;
         padding: 15px;
@@ -71,5 +73,82 @@ main{
             text-align: justify;
             font-size: 0.8em;
         }
+
+        /* Caixas de input de email e senha */
+
+        form > div.campo{
+            background-color: #5f2c82;
+            border-radius: 5px;
+            transform: translate(0, 7px);
+            height: 40px;
+            margin: 5px 0px;
+        }
+
+        form > div.campo > .botton{
+            padding:11px;
+            border-radius: 10px;
+            width: 85%;
+        }
+
+        div.campo > label{
+            display: none;
+        }
+
+        div.campo > i{
+            color: white;
+        }
+
+        input#ilogin{
+            background-color: #E3F0F8;
+        }
+
+        input#isenha{
+            background-color: #91CEC7;
+        }
+
+
+        /* Botões de Enviar e de esqueçeu senha */
+        form > input[type=submit] {
+            display: block;
+            width: 100%;
+            height: 40px;
+            color: white;
+            background-color: #499792;
+            border-radius: 5px;
+            border: none;;
+            transform: translate(0, 30px);
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+            form > input[type=submit]:hover{
+                background-color: #346663;
+            }
+
+        form > .botao{
+            display: block;
+            width: 100%;
+            height: 40px;
+            padding-top: 5px;
+            color: rgb(134, 133, 133);
+            text-decoration: none;
+            border: 2px solid rgb(197, 197, 197);
+            text-align: center;
+            border-radius: 5px;
+            transform: translate(0, 35px);
+            font-size: 1em;
+        }
+
+            form > .botao:hover{
+                background-color: #6cd3cf;
+            }
+
+            form > .botao > i{
+                font-size: 1em;
+                transform: translate(0,3px);
+                position: relative;
+            }
+
+        
         
 

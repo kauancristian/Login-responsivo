@@ -27,7 +27,7 @@ main{
     height: 100vh;
 }
 
-#login{
+section#login{
     position: absolute;
     background-color: white;
     text-align: center;
@@ -40,6 +40,9 @@ main{
     transform: translate(-50%, -55%);
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
+
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
 }
 
     #login > div#imagem{

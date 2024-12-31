@@ -37,12 +37,13 @@ main{
 
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -55%);
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
 
+    
     transition: width 0.3s, height 0.3s;
     transition-timing-function: ease;
+    transform: translate(-50%, -55%);
 }
 
     /* Imagem no login */
@@ -78,26 +79,46 @@ main{
 
         form > div.campo{
             background-color: #5f2c82;
-            border-radius: 5px;
-            transform: translate(0, 7px);
-            height: 42px;
+            border-radius: 8px;
+            height: 39.48px;
             margin: 5px 0px;
+            overflow:hidden;
+            border: 1.8px solid #5f2c82;
+
+            transform: translate(0, 7px);
         }
 
-        form > div.campo > .botton{
-            padding:11px;
-            border-radius: 10px;
-            width: 85%;
-            outline: none;
-        }
+            div.campo > #isenha:focus-within {
+                background-color: white;
+            }
 
-        div.campo > label{
-            display: none;
-        }
+            div.campo > #ilogin:focus-within {
+                background-color: white;
+            }
 
-        div.campo > i{
-            color: white;
-        }
+            form > div.campo > .botton{
+                padding:11px;
+                border-radius: 8px;
+                width: calc(100% - 45px);   /* Lembrar da função calc no css */
+                height: 100%;
+                outline: none;
+                border:none;
+
+                transform: translate(0.8px, -12px);
+            }
+
+            div.campo > label{
+                display: none;
+            }
+
+            div.campo > i{
+                color: white;
+                font-size: 1.8em;
+                width: 40px;
+                padding: 7px;
+
+                transform: translate(2.5px, -2px);
+            }
 
         input#ilogin{
             background-color: #E3F0F8;
@@ -117,9 +138,10 @@ main{
             background-color: #499792;
             border-radius: 5px;
             border: none;;
-            transform: translate(0, 30px);
             font-size: 1em;
             cursor: pointer;
+
+            transform: translate(0, 30px);
         }
 
             form > input[type=submit]:hover{
@@ -136,8 +158,9 @@ main{
             border: 2px solid rgb(197, 197, 197);
             text-align: center;
             border-radius: 5px;
-            transform: translate(0, 35px);
             font-size: 1em;
+
+            transform: translate(0, 35px);
         }
 
             form > .botao:hover{
@@ -146,8 +169,9 @@ main{
 
             form > .botao > i{
                 font-size: 1em;
-                transform: translate(0,3px);
                 position: relative;
+
+                transform: translate(0,3px);
             }
 
         

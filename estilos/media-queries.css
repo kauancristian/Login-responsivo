@@ -10,12 +10,14 @@ que são telas pequenas e celulares
 @media screen and (min-width:768px) and (max-width:992px){
     section#login{
         width: 80vw;
+        height: 320px;
     }
 
     section#login > div#imagem{
         float: left;
         width: 30%;
-        height: 100vh;
+        height: 100%;
+        background-size: cover;
     }
 
     section#login > div#cadastro{
@@ -33,7 +35,7 @@ que são telas pequenas e celulares
 @media screen and (min-width:992px) {
     section#login{
         width: 950px;
-        height: 50vh;
+        height: 53vh;
     }
 
     section#login > div#imagem{
@@ -45,11 +47,6 @@ que são telas pequenas e celulares
     section#login > div#cadastro{
         float: left;
         width: 50%;
-    }
-
-    #cadastro > aside{
-        text-align: justify;
-        font-size: 1.2em;
     }
 
     #cadastro h1{
